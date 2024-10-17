@@ -62,10 +62,28 @@ body{
     font-size: 1rem;
     margin-bottom: 0.3rem;
 }
+body{
+    animation: transitionIn 1s;
+}
+
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+
+
+    }
+
+}
 
 @media(max-width:1250px){
     #container{
         width: 40%;
+        height: max-content;
     }
 }
 @media(max-width:950px){
@@ -81,9 +99,11 @@ body{
 @media(max-width:550px){
     #container{
         width: 70%;
+        height:max-content ;
     }
+    
 }
-@media(max-width:380px){
+@media(max-width:400px){
     #container{
         width: 80%;
          height:max-content ;
